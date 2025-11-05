@@ -1,12 +1,11 @@
 import streamlit as st
 import pickle
-import re
-from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
 import nltk
-
-# Download stopwords (first time only)
 nltk.download('stopwords')
+from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+from nltk.stem.porter import PorterStemmer
 
 # Load trained model, vectorizer, and label encoder
 model = pickle.load(open('sentiment_model.pkl', 'rb'))
@@ -47,4 +46,5 @@ if st.button("Predict Sentiment"):
         else:
             st.error(f"Sentiment: {sentiment.capitalize()} 👎")
     else:
+
         st.warning("Please enter some text to predict.")
