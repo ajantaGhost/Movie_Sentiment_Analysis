@@ -39,7 +39,8 @@ Installation
 
 Clone this repository:
 
-git clone https://github.com/yourusername/SentimentAnalysisProject.git
+git clone https://github.com/ajantaGhost/Movie_Sentiment_Analysis
+
 cd SentimentAnalysisProject
 
 
@@ -125,7 +126,7 @@ Author
 
 Ajanta Ghosh
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/ajantaGhost
 
 License
 
